@@ -1,0 +1,870 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    transition: ease-in-out .5s;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.my100 {
+    margin-top: 100px;
+}
+
+/* title */
+
+.title h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.title hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    border: 2px solid black;
+}
+
+/* title */
+
+/* fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+
+/* fonts */
+
+/* main_page start */
+
+/* header start */
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.logo img {
+    width: 112px;
+    cursor: pointer;
+}
+
+.logo :hover {
+    transform: scale(1.02);
+}
+
+.nav_menu {
+    display: flex;
+    gap: 53px;
+    margin-left: -180px;
+}
+
+.nav_menu a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.nav_menu a:hover {
+    color: #2F78FF;
+}
+
+.header_info {
+    display: flex;
+    gap: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-right: -250px;
+}
+
+.header_info a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.btn {
+    width: 92px;
+    background-color: #2F78FF;
+    height: 39px;
+    border-radius: 15px;
+    border: transparent;
+    margin-left: -30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid #2F78FF;
+    color: #2F78FF;
+}
+
+.btn1 {
+    border: transparent;
+    width: 188px;
+    height: 39px;
+    border-radius: 15px 0 0 15px;
+    background-color: white;
+    color: #2F78FF;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    border: 1px solid #2F78FF;
+}
+
+/*  header end */
+
+/* banner start */
+
+.banner {
+    background-image: url(../media/main_page/banner/banner_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.banner_info h1 {
+    padding-top: 170px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.banner_info p {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 23px;
+}
+
+.btn2 {
+    margin-top: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #2F78FF;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 14px 48px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.banner .btn2:hover {
+    background-color: #2F78FF;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: #2F78FF;
+    border: 1px solid #2F78FF;
+}
+
+/* banner end */
+
+/* catalog start */
+
+.catalog_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    gap: 118px;
+}
+
+.catalog_card img {
+    width: 353px;
+    height: 300px;
+}
+
+.catalog_card img:hover {
+    transform: scale(1.04);
+}
+
+.catalog_card h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+/* catalog end */
+
+/* partners start */
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 78px 0;
+}
+
+.partners img:hover {
+    transform: translateY(-10%);
+}
+
+/* partners end */
+
+/* email start */
+
+.email {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.email_img {
+    background-image: url(../media/main_page/email/hand.png);
+    width: 766px;
+    height: 318px;
+    position: absolute;
+    right: -15px;
+}
+
+.email_info h2 {
+    padding: 48px 0;
+}
+
+.email_info input[type=email] {
+    width: 430px;
+    height: 67px;
+    background-color: #D5E4FF;
+    border-radius: 17px;
+    border: none;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 15px;
+    color: #363636;
+}
+
+.email_info .btn2 {
+    margin-left: 14px;
+    height: 67px;
+    margin-top: 0;
+}
+
+.email_info p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #4C4C4C;
+}
+
+/* email end */
+
+/* map start */
+
+.map {
+    background-image: url(../media/main_page/map/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 573px;
+}
+
+/* map end */
+
+/* footer start */
+
+footer {
+    height: 332px;
+    background-color: black;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 57px;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer_info h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.footer_info a {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer_info a:hover {
+    transform: scale(1.01);
+    color: white;
+}
+
+.footer_img {
+    display: flex;
+    gap: 18px;
+}
+
+.logo_f {
+    margin-right: 22px;
+}
+
+.f_text {
+    margin-top: 25px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.f_text a {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.f_text p {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.contacts_info {
+    display: flex;
+    gap: 25px;
+}
+
+.contacts_info a {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.contacts_info p {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* footer end */
+
+/* main_page end */
+
+/* phone_page start */
+
+.catalog_phone {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.filter {
+    width: 217px;
+}
+
+.filter h3 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.filter hr {
+    margin: 15px 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+
+.other {
+    margin-left: 27px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.other p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.other a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2F78FF;
+}
+
+.phone_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1090px;
+    gap: 100px;
+}
+
+.phone_card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.phone_card h4 {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+}
+
+.phone_card p {
+    color: black;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.image_for_phone :hover {
+    overflow: hidden;
+    transform: scale(1.03);
+}
+
+.like {
+    margin-left: 240px;
+    transition: ease-in-out .9s;
+    cursor: pointer;
+}
+
+.like svg:hover {
+    fill: #2F78FF;
+}
+
+/* phone_page end */
+
+/* comp_page start */
+
+.like_c {
+    margin-left: 250px;
+    transition: ease-in-out .9s;
+    cursor: pointer;
+}
+
+.like_c svg:hover {
+    fill: #2F78FF;
+}
+
+.izgoy {
+    display: flex;
+    align-items: center;
+    height: 215px;
+}
+
+.comp_card {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+}
+
+.comp_card h4 {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comp_card p {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.comp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1050px;
+    gap: 20px;
+}
+
+/* comp_page start */
+
+/* TV page start */
+
+.TV {
+    width: 300px;
+}
+
+.TV .like {
+    margin-left: 275px;
+}
+
+.TV_info {
+    display: flex;
+    gap: 65px;
+}
+
+/* TV page end */
+
+/* home start */
+
+.home_info .phone_card {
+    width: 320px;
+}
+
+.home_info {
+    width: 1050px;
+    display: flex;
+    gap: 30px;
+}
+
+/* home end */
+
+/* registracion start */
+
+.registracion .title {
+    margin-top: 52px;
+    text-align: center;
+}
+
+.registracion h2 {
+    color: #2F78FF;
+}
+
+.form_block {
+    width: 749px;
+    height: 517px;
+    background-color: #D5E4FF;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 46px;
+    margin-bottom: 76px;
+}
+
+.form_block form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-top: 53px;
+}
+
+.form_block input {
+    background-color: #fff;
+    width: 505px;
+    height: 67px;
+    border: transparent;
+    border-radius: 10px;
+    padding-left: 25px;
+}
+
+.form_block input[type=text] {
+    font-size: 16px;
+}
+
+.form_block input[type=password] {
+    font-size: 16px;
+}
+
+.form_block .btn2 {
+    width: 505px;
+    height: 67px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.form_block p {
+    padding-left: 122px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3C4047;
+}
+
+
+/* registracion end */
+
+/* vhod start */
+
+.exit .form_block {
+    height: 410px;
+}
+
+.exit .form_block a {
+    padding-left: 122px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3C4047;
+    padding-top: 10px;
+}
+
+/* vhod end */
+
+/* card start */
+
+.info {
+    display: flex;
+    padding-top: 10px;
+    gap: 139px;
+}
+
+.left_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_image img {
+    margin: 0 auto;
+    padding: 81px 150px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.right_side {
+    width: 690px;
+}
+
+.right_side h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 44px;
+    padding-top: 73px;
+}
+
+.card_info {
+    display: flex;
+    gap: 76px;
+}
+
+.titles {
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.titles h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.imges {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.smart {
+    display: flex;
+    gap: 15px;
+}
+
+.btn3 {
+    width: 101px;
+    height: 47px;
+    border: 1px solid #A7A7A7;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn3:focus {
+    border: 2px solid #2F78FF;
+}
+
+.btn4 {
+    width: 155px;
+    height: 47px;
+    border: 2px solid #2F78FF;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.card_info hr {
+    width: 100%;
+}
+
+.price {
+    padding-top: 36px;
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+
+.price h3 {
+    padding: 0;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.price p {
+    color: #757575;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.zakaz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.btn5 {
+    width: 689px;
+    height: 59px;
+    background-color: #2F78FF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btn5:hover {
+    background-color: transparent;
+    color: #2F78FF;
+    border: 1px solid #2F78FF;
+}
+
+.btn6 {
+    width: 689px;
+    height: 59px;
+    background-color: #eeeeee;
+    color: #2F78FF;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+.btn6:hover {
+    background-color: transparent;
+}
+
+.haracter h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.haracter p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.haracter_sides {
+    display: flex;
+    gap: 143px;
+}
+
+.haracter_side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* card end */
