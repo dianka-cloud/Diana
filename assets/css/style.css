@@ -98,7 +98,7 @@
     margin-left: -200px;
 }
 
-nav{
+nav {
     display: flex;
     gap: 50px;
 }
@@ -124,7 +124,7 @@ nav{
     margin-right: -250px;
 }
 
-.nonee{
+.nonee {
     display: none;
 }
 
@@ -887,7 +887,7 @@ footer {
         margin: 0 auto;
     }
 
-    .nonee{
+    .nonee {
         display: none;
     }
 
@@ -902,7 +902,7 @@ footer {
         margin-left: -60px;
     }
 
-    nav{
+    nav {
         display: flex;
         gap: 15px;
     }
@@ -1067,10 +1067,10 @@ footer {
     }
 }
 
-    #burger,
-    [for=burger] {
-        display: none;
-    }
+#burger,
+[for=burger] {
+    display: none;
+}
 
 
 @media screen and (max-width:425px) {
@@ -1128,13 +1128,13 @@ footer {
             opacity: 1;
         }
     }
-    
-    .nonee{
+
+    .nonee {
         display: flex;
         flex-direction: column;
     }
 
-    .header{
+    .header {
         position: fixed;
         background-color: #fff;
         width: 110%;
@@ -1164,6 +1164,12 @@ footer {
 
     .btn1 {
         display: none;
+    }
+
+    .banner {
+        background-image: url(../media/main_page/banner/banner_hone.png);
+        background-size: cover;
+        height: 600px;
     }
 
     .banner_info h1 {
@@ -1202,7 +1208,7 @@ footer {
         text-transform: uppercase;
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 32px;
+        font-size: 30px;
         margin-top: 100px;
     }
 
@@ -1214,7 +1220,7 @@ footer {
         gap: 40px;
     }
 
-    .partners{
+    .partners {
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
@@ -1231,15 +1237,16 @@ footer {
         position: relative;
         margin-top: -100px;
         overflow: hidden;
+        height: 500px;
     }
 
     .email_img {
         background-image: url(../media/main_page/email/hand.png);
-        width: 666px;
-        height: 318px;
+        width: 450px;
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
-        right: -15px;
-        top: 50px;
+        top: 180px;
     }
 
     .email_info {
@@ -1251,11 +1258,18 @@ footer {
         padding: 48px 0;
     }
 
+    .email_info form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
     .email_info input[type=email] {
-        width: 430px;
-        height: 67px;
+        width: 360px;
+        height: 47px;
         background-color: #D5E4FF;
-        border-radius: 17px;
+        border-radius: 15px;
         border: none;
         font-weight: 300;
         font-size: 18px;
@@ -1264,13 +1278,18 @@ footer {
     }
 
     .email_info .btn2 {
-        margin-left: 14px;
-        height: 67px;
-        margin-top: 0;
+        text-align: center;
+        margin-left: 0px;
+        height: 47px;
+        width: 360px;
+        padding: 5px;
+        margin-top: 10px;
     }
 
     .email_info p {
+        width: 360px;
         padding-top: 10px;
+        padding-left: 22px;
         font-size: 14px;
         font-weight: 200;
         color: #4C4C4C;
@@ -1282,6 +1301,101 @@ footer {
         background-repeat: no-repeat;
         height: 573px;
     }
+
+    footer {
+        background-color: black;
+        height: 830px;
+    }
+    
+    .footer_menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 40px;
+        align-items: start;
+        padding-top: 57px;
+    }
+    
+    .footer_info {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .footer_info h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    
+    .footer_info a {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    .footer_info a:hover {
+        transform: scale(1.01);
+        color: white;
+    }
+    
+    .footer_img {
+        display: flex;
+        gap: 18px;
+    }
+    
+    .logo_f {
+        margin-right: 22px;
+    }
+    
+    .f_text {
+        margin-top: 25px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .f_text a {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .f_text p {
+        color: white;
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .contacts{
+        padding-left: 20px;
+    }
+    
+    .contacts_info {
+        padding-left: 20px;
+        display: flex;
+        gap: 25px;
+    }
+    
+    .contacts_info a {
+        color: white;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    .contacts_info p {
+        color: white;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    
 
 
 }
